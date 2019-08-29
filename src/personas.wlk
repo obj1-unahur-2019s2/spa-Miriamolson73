@@ -22,12 +22,21 @@ object bruno {
 	method estaPerfecto() { return self.esFeliz() and not self.tieneSed() and self.peso().between(50000, 70000) }
 	method mediodiaEnCasa() { 
 		self.comerFideos()
-		// y que mas?
+		self.verElNoticiero()
+		self.tomarAgua()
 	}
 }
 
 object ramiro {
-	method recibirMasajes() { /*... completar ...*/ }
+	var contracturado=0
+	var pielGrasa=false
+	
+	method recibirMasajes() { 
+		if (contracturado >2){
+			contracturado=2
+		}
+		else {contracturado=0}
+	}
 	method darseUnBanioDeVapor() { /*... completar ...*/ }
 	method comerseUnBigMac() { /*... completar ...*/ }
 	method bajarALaFosa() { /*... completar ...*/ }
